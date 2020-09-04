@@ -18,7 +18,7 @@ const weatherContent = document.querySelector("#weather-content");
 
 let WeatherArray = [];
 
-console.log(weatherContent)
+
 
 // function 1
 const GetWeather = (Location) => {

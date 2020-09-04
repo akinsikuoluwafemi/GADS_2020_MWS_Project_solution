@@ -13,12 +13,10 @@ const windSpValue = document.querySelector("#wind-speed");
 const inputField = document.querySelector("#input_field");
 const form = document.querySelector('#form');
 
-const weatherContent = document.querySelector("#weather-content");
-
 
 let WeatherArray = [];
 
-console.log(weatherContent)
+
 
 // function 1
 const GetWeather = (Location) => {
@@ -30,7 +28,7 @@ const GetWeather = (Location) => {
       
       WeatherArray.push(data)
       console.log(data);
-      console.log(WeatherArray);
+console.log(WeatherArray);
 
     })
     .catch((error) => {

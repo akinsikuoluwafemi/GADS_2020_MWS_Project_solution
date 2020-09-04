@@ -13,12 +13,12 @@ const windSpValue = document.querySelector("#wind-speed");
 const inputField = document.querySelector("#input_field");
 const form = document.querySelector('#form');
 
-const weatherContent = document.querySelector("#weather-content");
+const weatherConte
 
 
 let WeatherArray = [];
 
-console.log(weatherContent)
+
 
 // function 1
 const GetWeather = (Location) => {

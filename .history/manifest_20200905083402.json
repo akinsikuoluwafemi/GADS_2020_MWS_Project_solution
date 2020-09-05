@@ -1,0 +1,39 @@
+{
+    "name": "WeathLIFY weather app",
+    "short_name": "WeathLIFY",
+    "start_url": "/index/html",
+    "scope": ".",
+    "display": "standalone",
+    "background_color": "#fff",
+    "theme_color": "#2BA744",
+    "description": "All your forcast resources in one app",
+    "dir": "ltr",
+    "lang": "en-US",
+    "orientation": "portrait-primary"
+}
+
+
+{
+    "short_name": "WeathLIFY",
+    "name": "WeathLIFY weather app",
+    "icons": [{
+            "src": "new-photo.png",
+            "sizes": "64x64 32x32 24x24 16x16",
+            "type": "image/x-icon"
+        },
+        {
+            "src": "new-photo.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "new-photo.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff"
+}

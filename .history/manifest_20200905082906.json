@@ -1,0 +1,9 @@
+{
+    "name": "WeathLIFY weather app",
+    "short_name": "WeathLIFY",
+    "start_url": "/index/html",
+    "scope": ".",
+    "display": "standalone",
+    "background_color": "#fff",
+    "theme_color": ""
+}

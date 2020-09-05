@@ -33,14 +33,14 @@ var getWeatherContent = function getWeatherContent(arr) {
 
 
 var GetWeather = function GetWeather(Location) {
-  var url = "https://api.openweathermap.org/data/2.5/weather?q=".concat(Location, "&appid=914023c54fa48cb8be92d9179794a8ba");
+  var url = "https://api.openweathermap.org/data/2.5/weather?q=".concat(Location, "&appid=3684b0394f654d433041c59dfbdf9904");
   fetch(url).then(function (response) {
     return response.json();
   }).then(function (data) {
     console.log(data);
     WeatherArray.unshift(data);
     console.log(WeatherArray);
-    localStorage.setItem('weatherdata', JSON.stringify(WeatherArray));
+    localStorage.setItem("weatherdata", JSON.stringify(WeatherArray));
     setTimeout(function () {
       location.reload();
     }, 3500);

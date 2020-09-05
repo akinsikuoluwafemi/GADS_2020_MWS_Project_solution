@@ -67,6 +67,7 @@ const GetWeather = (Location) => {
     .then((response) => response.json())
     .then((data) => {
     console.log(data);
+    
        WeatherArray.unshift(data);
        console.log(WeatherArray);
        localStorage.setItem("weatherdata", JSON.stringify(WeatherArray));
@@ -74,6 +75,7 @@ const GetWeather = (Location) => {
          location.reload();
        }, 3500);
      
+
     })
     .catch((error) => {
       console.log(error);

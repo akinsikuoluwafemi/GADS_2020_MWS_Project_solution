@@ -67,13 +67,16 @@ const GetWeather = (Location) => {
     .then((response) => response.json())
     .then((data) => {
     console.log(data);
-       WeatherArray.unshift(data);
-       console.log(WeatherArray);
-       localStorage.setItem("weatherdata", JSON.stringify(WeatherArray));
-       setTimeout(() => {
-         location.reload();
-       }, 3500);
+     if(data.message ="Nothing to geocode")
+    WeatherArray.unshift(data);
+    console.log(WeatherArray);
+    localStorage.setItem("weatherdata", JSON.stringify(WeatherArray));
+    setTimeout(() => {
+      location.reload();
+    }, 3500);
+      
      
+
     })
     .catch((error) => {
       console.log(error);

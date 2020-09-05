@@ -61,19 +61,20 @@ const getWeatherContent = (arr) => {
 
 // function 1
 const GetWeather = (Location) => {
-  let url = `https://api.openweathermap.org/data/2.5/weather?q=${Location}&appid=3684b0394f654d433041c59dfbdf9904`;
+  let url = `https://api.openweathermap.org/data/2.5/weather?q=${Location}&appid=914023c54fa48cb8be92d9179794a8ba`;
 
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
     console.log(data);
-       WeatherArray.unshift(data);
-       console.log(WeatherArray);
-       localStorage.setItem("weatherdata", JSON.stringify(WeatherArray));
-       setTimeout(() => {
-         location.reload();
-       }, 3500);
-     
+      if(data.message = "Nothing to geocode")
+      WeatherArray.unshift(data)
+      console.log(WeatherArray);
+      localStorage.setItem('weatherdata', JSON.stringify(WeatherArray))
+      setTimeout(() => {
+        location.reload();
+      }, 3500);
+
     })
     .catch((error) => {
       console.log(error);

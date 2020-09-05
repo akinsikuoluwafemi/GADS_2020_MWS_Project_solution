@@ -74,6 +74,7 @@ const GetWeather = (Location) => {
          location.reload();
        }, 3500);
      
+
     })
     .catch((error) => {
       console.log(error);

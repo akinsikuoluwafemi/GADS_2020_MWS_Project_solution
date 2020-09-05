@@ -1,0 +1,22 @@
+{
+  "name": "WeathL",
+  "version": "1.0.0",
+  "description": "A complete guide to PWA using a weather application.",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -c-1 -p 3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akinsikuoluwafemi/GADS_2020_MWS_Project_solution.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akinsikuoluwafemi/GADS_2020_MWS_Project_solution/issues"
+  },
+  "homepage": "https://github.com/akinsikuoluwafemi/GADS_2020_MWS_Project_solution#readme",
+  "dependencies": {
+    "http-server": "^0.12.3"
+  }
+}

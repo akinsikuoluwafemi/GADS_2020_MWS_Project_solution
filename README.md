@@ -1,1 +1,0 @@
-# GADS_2020_MWS_Project_solution

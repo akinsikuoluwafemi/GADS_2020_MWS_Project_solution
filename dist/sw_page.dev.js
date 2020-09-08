@@ -32,4 +32,18 @@ self.addEventListener("fetch", function (e) {
   e.respondWith(fetch(e.request)["catch"](function () {
     return caches.match(e.request);
   }));
+}); // service worker notification event
+
+self.addEventListener('notificationclick', function (event) {
+  var notification = event.notification;
+  var action = event.action;
+  console.log(notification);
+
+  if (action === 'confirm') {
+    console.log('Confirm was chosen');
+    notification.close();
+  } else {
+    console.log(action);
+    notification.close();
+  }
 });

@@ -68,7 +68,8 @@ self.addEventListener('notificationclick', (event) => {
 
   } else{
     console.log(action)
-    notification.close();
-
   }
+
+
+
 })

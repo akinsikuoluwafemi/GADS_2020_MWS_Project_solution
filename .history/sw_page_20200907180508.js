@@ -66,9 +66,11 @@ self.addEventListener('notificationclick', (event) => {
     console.log('Confirm was chosen');
     notification.close();
 
-  } else{
-    console.log(action)
-    notification.close();
-
+  } else
+  {
+    console.lo
   }
+
+
+
 })

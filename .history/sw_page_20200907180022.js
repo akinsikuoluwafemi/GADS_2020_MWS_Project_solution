@@ -53,22 +53,4 @@ self.addEventListener("fetch", (e) => {
 });
 
 
-// service worker notification event
-
-
-self.addEventListener('notificationclick', (event) => {
-  let notification = event.notification;
-  var action = event.action
-
-  console.log(notification);
-
-  if(action === 'confirm'){
-    console.log('Confirm was chosen');
-    notification.close();
-
-  } else{
-    console.log(action)
-    notification.close();
-
-  }
-})
+self.addE
